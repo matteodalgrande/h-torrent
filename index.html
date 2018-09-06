@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>H torrent</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+	<link rel="stylesheet" type="text/css" href="stile.css">
+	<script src="codice.js"></script>
+</head>
+<body>
+	<div id="container">
+		<header id="header">
+			<img id="logo" src="logo Htorrent.png">
+			<form id="search-form" name="searchForm" action="javascript:press()">
+				<label forms="search-form" for="search-input"></label>
+				<div class="search-bar">
+					<input id="search-input" type="search" placeholder="Search here...">
+					<input class="button-search" id="myButton" type="submit" value="&#X2315;" onClick="searchQuery(document.getElementById('iframe-content').innerHTML,document.getElementById('search-input').value)"> 
+				</div>
+				
+			</form>
+			<nav class="siti-form-nav">
+			<div class="siti-form-content">
+			<form id="siti-form">
+				<input class="button" id="ilcorsaronero" type="button" onClick="cambiaSitoAttivo(document.getElementById('ilcorsaronero').value)" value="ilcorsaronero">
+
+				<input class="button" id="limetorrent" type="button" onClick="cambiaSitoAttivo(document.getElementById('limetorrent').value)" value="limetorrent">
+
+				<input class="button" id="thepiratebay" type="button" onClick="cambiaSitoAttivo(document.getElementById('thepiratebay').value)" value="thepiratebay">
+				
+				<input class="button" id="kickasstorrents" type="button" onClick="cambiaSitoAttivo(document.getElementById('kickasstorrents').value)" value="kickasstorrents">
+				
+				<input class="button" id="extratorrent" type="button" onClick="cambiaSitoAttivo(document.getElementById('extratorrent').value)" value="extratorrent">
+				
+				<input class="button" id="bt-scene" type="button" onClick="cambiaSitoAttivo(document.getElementById('bt-scene').value)" value="bt-scene">
+				
+				<input class="button" id="seedpeer" type="button" onClick="cambiaSitoAttivo(document.getElementById('seedpeer').value)" value="seedpeer">
+				
+				<input class="button" id="skytorrents" type="button" onClick="cambiaSitoAttivo(document.getElementById('skytorrents').value)" value="skytorrents">
+				
+				<input class="button" id="worldwidetorrents" type="button" onClick="cambiaSitoAttivo(document.getElementById('worldwidetorrents').value)" value="worldwidetorrents">
+				
+				<input class="button" id="torrentdownloads" type="button" onClick="cambiaSitoAttivo(document.getElementById('torrentdownloads').value)" value="torrentdownloads">
+
+				<input class="button" id="torrentken" type="button" onClick="cambiaSitoAttivo(document.getElementById('torrentken').value)" value="torrentken">
+			</form>
+			</div>
+			</nav>
+		</header>
+
+		<div id="iframe-content">
+			<iframe id='iframe-ilcorsaronero' src='https://ilcorsaronero.info/'></iframe>
+		</div>	
+	</div>
+</body>
+</html>

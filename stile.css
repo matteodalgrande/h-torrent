@@ -1,0 +1,165 @@
+body{
+	margin:0px;
+	overflow-y:hidden;
+
+	font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    font-size: 15px;
+}
+#container{
+	position: absolute;
+	top:0%;
+	width:100%;
+	height:100%;
+}
+#header{
+	background-color: #333;
+	display: fixed;
+	top:0;
+	width:100%;
+	height:60px;
+	overflow: hidden;
+}
+#logo{
+	height:60px;
+	margin:0px;
+	border:0px;
+	padding:0px;
+	float:left;
+}
+form{
+	margin:0px 0px;
+	display:inline-block;
+	border:0px;
+}
+#search-form{
+	margin:0px 5px 0px 0px;
+	float:left;
+	padding: 13.8px 10px;
+	height:60px;
+}
+#siti-form{
+	margin:0px;
+}
+
+.button{
+	border:none;
+	color: #F44611;
+	background-color: #222;
+	height:60px;
+	margin: 0px -3px;
+}
+.button:hover{
+	background-color: #F44611;
+	color:#282828;
+}
+.button+.button{
+	  border-left: 1px solid #111;
+}
+.button-search{
+	display: inline-block;
+	float:left;
+	width: 24px;
+	background-color: #666;
+	color:#888;
+	height:32.5px;
+
+	font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+	
+	font-size:25px;
+	line-height: 0;
+    outline: none;
+	padding: 0px;
+
+	border-top:2px solid #F44611;
+	border-bottom: 2px solid #F44611;
+	border-right:2px solid #F44611;
+	border-left: 0px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+.button-search:hover{
+	color:#f44611;
+}
+#search-input{
+	display: inline-block;
+	float:left;
+    width:150px;
+    background-color: #666;
+    color:#fff;
+    height:32.5px;
+    
+ 	font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+
+    font-size: 15px;
+    line-height: 0;
+    outline: none;
+    padding:0px 8px;
+
+    border:2px solid #f44611;
+    border-right:0px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+
+    -moz-border-bottom-left-radius: 5px;
+    -moz-border-top-left-radius: 5px;
+    -moz-border-top-right-radius: 0px;
+    -moz-border-bottom-right-radius: 0px;
+
+    -webkit-border-bottom-left-radius: 5px;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 0px;
+    -webkit-border-bottom-right-radius: 0px;
+}
+::placeholder{
+	color:white;
+}
+.search-bar{
+	height:32.5px;
+}
+iframe{
+	display: block; /*iframe è inline di default*/
+	margin:0px;
+	border:0px;
+	padding:0px;
+
+	width:100%;
+	height:100%;
+}
+#iframe-content{
+	display:block;
+	position: absolute;
+	margin:0px;
+	border:0px;
+	padding:0px;
+
+	width:100%;
+	top:60px;
+	bottom:0;
+}
+
+
+.siti-form-nav {
+    /* Make this scrollable when needed */
+    overflow-x: auto;
+    /* We don't want vertical scrolling */
+    overflow-y: hidden;
+    /* Make an auto-hiding scroller for the 3 people using a IE */
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    /* For WebKit implementations, provide inertia scrolling */
+    -webkit-overflow-scrolling: touch;
+    /* We don't want internal inline elements to wrap */
+     white-space: nowrap;
+     /* Remove the default scrollbar for WebKit implementations */
+     display:inline;
+     float:left;
+     width:40%;
+
+     font-size:17px;
+     line-height: 1.5;
+
+ }
+.siti-form-nav::-webkit-scrollbar {
+     display: none;
+}
